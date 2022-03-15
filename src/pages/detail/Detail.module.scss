@@ -154,7 +154,9 @@
     text-align: center;
     .logo {
       max-width: 1rem;
-      fill: #D5EF7F;
+      path {
+        fill: #D5EF7F;
+      }
       transform: translateY(3px) translateX(-5px);
     }
   }
@@ -230,7 +232,45 @@
   .item {
     max-width: 24px;
   }
-  height: 20rem;
+  .comment-item {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    .image {
+      width: 32px;
+      height: 32px;
+      margin-top: 5px;
+    }
+    .comment-content {
+      .comment-name {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: #8560A9;
+      }
+      .comment-time {
+        display: inline-block;
+        font-size: 0.6rem; 
+        color: #BABABA;
+        margin-left: 0.8rem;
+      }
+      .comment-content {
+        font-size: 0.9rem;
+        color: #67616D;
+        padding-right: 2rem;
+      }
+    }
+    .comment-reply {
+      max-width: 16px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      path {
+        fill: #D5EF7F;
+      }
+    }
+  }
+  margin-bottom: 5rem;
 }
 .footer {
   position: fixed;
@@ -266,6 +306,8 @@
     background-color: #D5EF7F;
     font-size: 0.9rem;
     color: #788C36;
-    fill: #788C36;
+    path {
+      fill: #788C36;
+    }
   }
 }

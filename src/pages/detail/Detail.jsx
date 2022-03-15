@@ -13,6 +13,7 @@ import {ReactComponent as CheckLogo} from '../../assets/SVGs/check-outline.svg';
 import {ReactComponent as LikeLogo} from '../../assets/SVGs/like-outline.svg';
 import {ReactComponent as DateFromLogo} from '../../assets/SVGs/date-from.svg';
 import {ReactComponent as DateToLogo} from '../../assets/SVGs/date-to.svg';
+import {ReactComponent as ReplyLogo} from '../../assets/SVGs/reply.svg';
 const Detail = props => {
   return (
     <div className={`${styles.root}`}>
@@ -145,6 +146,62 @@ const Feedback = props => {
             <img src={User} alt="" className={`${styles["item"]}`} />
             <img src={User} alt="" className={`${styles["item"]}`} />
             <img src={User} alt="" className={`${styles["item"]}`} />
+          </div>
+        </div>
+        <div className={`${styles["comment-list"]} `}>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Nullam ut tincidunt nunc. Petus lacus, commodo eget justo ut, rutrum varius nunc.</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
+          </div>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Petus lacus, commodo!!</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
+          </div>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Petus lacus, commodo!!</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
+          </div>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Petus lacus, commodo!!</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
+          </div>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Petus lacus, commodo!!</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
+          </div>
+          <div className={`${styles["comment-item"]} `}>
+            <img src={User} alt="" className={`${styles["image"]} `} />
+            <div className={`${styles["comment-content"]} `}>
+              <div className={`${styles["comment-name"]} `}>Little Prince</div>
+              <div className={`${styles["comment-time"]} `}>9 hours ago</div>
+              <div className={`${styles["comment-content"]} `}>Petus lacus, commodo!!</div>
+            </div>
+            <ReplyLogo className={`${styles["comment-reply"]} `}></ReplyLogo>
           </div>
         </div>
       </div>
