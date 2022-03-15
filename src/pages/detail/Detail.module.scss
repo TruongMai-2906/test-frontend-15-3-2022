@@ -199,9 +199,36 @@
     margin-top: 1rem;
     img {
       width: 100%;
-      height: inherit;
+      height: 88px;
       object-fit: cover;
     }
+  }
+}
+
+.feedback {
+  margin-top: 1rem;
+  .feedback-container {
+    display: flex;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 1.5rem 0 1rem;
+  }
+  .logo {
+    max-width: 12px;
+  }
+  .text {
+    font-size: 0.8rem;
+    color: #67616D;
+    stroke: #AC8EC9;
+    width: 5rem;
+    align-self: center;
+  }
+  .list {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .item {
+    max-width: 24px;
   }
   height: 20rem;
 }

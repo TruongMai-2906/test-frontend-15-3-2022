@@ -123,8 +123,31 @@ const Place = props => {
 
 const Feedback = props => {
   return (
-    <div className={`${styles["feedback"]} ${styles["container"]}`}>
-      
+    <div className={`${styles["feedback"]} `}>
+      <div className={`${styles["container"]}`}>
+        <div className={`${styles["feedback-container"]}`}>
+          <div className={`${styles["text"]}`}><CheckLogo className={`${styles["logo"]}`}></CheckLogo> 34 going</div>
+          <div className={`${styles["list"]}`}>
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+          </div>
+        </div>
+        <div className={`${styles["feedback-container"]}`}>
+          <div className={`${styles["text"]}`}><LikeLogo className={`${styles["logo"]}`}></LikeLogo> 7 likes</div>
+          <div className={`${styles["list"]}`}>
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+            <img src={User} alt="" className={`${styles["item"]}`} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
