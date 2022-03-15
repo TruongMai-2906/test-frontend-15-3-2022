@@ -1,0 +1,244 @@
+.root {
+  position: relative;
+}
+.container {
+  margin: 0 1.2rem;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #8560A9;
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+
+  .logo {
+    max-width: 24px;
+  }
+  .home {
+    fill: #453257;
+  }
+  .cat {
+    fill: #D5EF7F;
+  }
+  .user {
+    fill: orange;
+  }
+}
+.banner {
+  margin-top: 4rem;
+
+  .channel-name {
+    font-size: 0.8rem;
+    color: #8560A9;
+    border: 1px solid #D3C1E5;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 0 5px;
+  }
+  .title {
+    color: #453257;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .user {
+    display: flex;
+    gap: 0.8rem;
+    padding: 2rem 0;
+  }
+  .user-image {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+  }
+  .user-name {
+    font-size: 0.9rem;
+    color: #67616D;
+  }
+  .published-date {
+    font-size: 0.8rem;
+    color: #BABABA;
+  }
+}
+.content {
+  position: relative;
+
+  .item-container {
+    display: flex;
+    text-align: center;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0.9rem 0;
+  }
+  .item {
+    flex: 1;
+    color: #8C8C8C;
+    fill: #8C8C8C;
+    &:hover {
+      color: #AECB4F;
+      fill: #AECB4F;
+      cursor: pointer;
+    }
+  }
+  .logo {
+    max-width: 1rem;
+    transform: translateY(3px);
+    margin-right: 0.5rem;
+  }
+  .image-list {
+    display: flex;
+    gap: 0.5rem;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .text {
+    margin-top: 0.8rem;
+    max-height: 12rem;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+    background: linear-gradient(180deg,transparent 0,#fff);
+  }
+  .button {
+    position: absolute;
+    bottom: 0;
+    right: 1.2rem;
+    color: #67616D;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #D5EF7F;
+    border-radius: 20px;
+  }
+}
+
+.time {
+  margin-top: 1.5rem;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  // height: 20rem;
+  .title {
+    color: #8560A9;
+    position: relative;
+    margin-top: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -0.5rem;
+      width: 5px;
+      height: 100%;
+      background-color: #8560A9;
+      border-radius: 20px;
+    }
+  }
+  .time-container {
+    display: flex;
+    margin: 1rem 0.5rem;
+  }
+  .item {
+    flex: 1;
+  }
+  .date {
+    color: #67616D;
+    text-align: center;
+    .logo {
+      max-width: 1rem;
+      fill: #D5EF7F;
+      transform: translateY(3px) translateX(-5px);
+    }
+  }
+  .hour {
+    color: #AECB4F;
+    font-size: 3rem;
+    text-align: center;
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+.place {
+  margin-top: 1.5rem;
+  .title {
+    color: #8560A9;
+    position: relative;
+    margin-top: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -0.5rem;
+      width: 5px;
+      height: 100%;
+      background-color: #8560A9;
+      border-radius: 20px;
+    }
+  }
+  .address {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #67616D;
+    font-weight: 600;
+    span {
+      font-weight: 400;
+    }
+  }
+  .map {
+    width: 100%;
+    max-height: 88px;
+    margin-top: 1rem;
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  height: 20rem;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #453257;
+  text-align: center;
+  // padding: 1.3rem 0;
+  text-transform: uppercase;
+  
+
+  .logo {
+    max-width: 24px;
+  }
+  .footer-container {
+    display: flex;
+  }
+  .comment-like {
+    width: 60%;
+    display: flex;
+    padding: 1rem 0;
+    background-color: #8560A9;
+    .item {
+      flex: 1;
+      fill: #000;
+    }
+  }
+  
+  .join {
+    width: 40%;
+    padding: 1rem 0;
+    background-color: #D5EF7F;
+    font-size: 0.9rem;
+    color: #788C36;
+    fill: #788C36;
+  }
+}
